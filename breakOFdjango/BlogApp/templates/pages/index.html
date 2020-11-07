@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="offset-1 col-10 list-div">
+    <h1>Posts</h1>
+    <div class="col-9 search-div">
+        <form method="GET" id="search-form"> <!--UTILIZADO NAS BUSCAS-->        
+            <input class="form-control" type="text" id="search" name="search" placeholder="Digite o nome do post para buscar">
+            <button class="fas fa-search" id="search-btn"></button>
+        </form>
+    </div>
+    
+{%endblock%}
