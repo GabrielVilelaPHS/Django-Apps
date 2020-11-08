@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'BlogApp',
     'ckeditor',
-    'ckeditor_uploder',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -124,4 +124,4 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-CKEDITOR_UPLOADER_PATH = 'uploads/' 
+CKEDITOR_UPLOAD_PATH = 'uploads/' 

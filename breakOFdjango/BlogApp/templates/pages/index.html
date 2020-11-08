@@ -11,4 +11,12 @@
         </form>
     </div>
     
+    <ul class = "post-list">
+        {%for post in posts%}
+            <li class="post-item">
+                <h1><a href="/post/{{post.id}}"> {{post.title}}</a></h1>
+                <span>{{post.sumary|safe}}</span>
+            </li>
+        {%endfor%}
+    </ul>
 {%endblock%}

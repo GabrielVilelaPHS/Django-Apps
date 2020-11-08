@@ -17,14 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static #poque vamos estar adiciconando ao estatico como MIDIA
 
-from django.conf import settings
+from django.conf import settings #é importado por padrão quando se usa ckeditor
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('BlogApp.urls')),
-    path('ckeditor/', include('ckeditor_uploader.urls')) 
+    
     '''
     O paocte ckeditor se comporta como o app, 
     por isso tem que colocar no urls o que na verdade seria u diretório.
     '''
-]+static(settings.MEDIA_URL)
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+]+static(settings.MEDIA_URL) #arquivo settings variável MEDIA_URL
