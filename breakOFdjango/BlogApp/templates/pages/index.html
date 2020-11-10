@@ -15,7 +15,7 @@
         {%for post in posts%}
             <li class="post-item">
                 <h1><a href="/post/{{post.id}}"> {{post.title}}</a></h1>
-                <span>{{post.sumary|safe}}</span>
+                <span>{{post.summary|safe}}</span>
             </li>
         {%endfor%}
     </ul>

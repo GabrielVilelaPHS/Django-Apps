@@ -24,7 +24,7 @@ urlpatterns = [
     path('', include('BlogApp.urls')),
     
     '''
-    O paocte ckeditor se comporta como o app, 
+    O pacote ckeditor se comporta como o app, 
     por isso tem que colocar no urls o que na verdade seria u diretório.
     '''
     path('ckeditor/', include('ckeditor_uploader.urls')),

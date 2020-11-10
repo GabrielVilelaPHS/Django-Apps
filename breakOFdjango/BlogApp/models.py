@@ -7,7 +7,7 @@ from django.contrib.auth.models import User #Gere quem pode entrar
 #Classe de objetos, que são as partes do banco de dados 
 class Post(models.Model):
     title = models.CharField(max_length= 150)
-    sumary = RichTextField() #resumo
+    summary = RichTextField() #resumo
     content = RichTextUploadingField() #conteudo com imagem
     '''
     on_delete = quando apagar tal post, apaga quem fez
